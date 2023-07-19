@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.wrapper{
+    display: grid;
+    width: 1500px;
+    height: 500px;
+    margin: 0 auto;
+    background-color: whitesmoke;
+    gap: 20px 20px;
+    grid-template-areas: 
+    "card1 card2 card2 card3 card3"
+    "card1 card2 card2 card3 card3"
+    "card1 card5 card5 card3 card3"
+    "card1 card5 card5 card3 card3"
+    "card4 card5 card5 card6 card6"
+    "card4 card7 card7 card6 card6"
+    "card4 card7 card7 card8 card8"
+    "card4 card7 card7 card8 card8"
+    ;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+}
+
+.card1{
+    background-color: gray;
+    grid-area: card1;
+}
+.card2{
+    background-color: gold;
+    grid-area: card2;
+}
+.card3{
+    background-color:navajowhite;
+    grid-area: card3;
+}
+.card4{
+    background-color: hotpink;
+    grid-area: card4;
+}
+.card5{
+    background-color: darkgoldenrod;
+    grid-area: card5;
+}
+.card6{
+    background-color: lawngreen;
+    grid-area: card6;
+}
+.card7{
+    background-color: firebrick;
+    grid-area: card7;
+}
+.card8{
+    background-color: aquamarine;
+    grid-area: card8;
+}
+
